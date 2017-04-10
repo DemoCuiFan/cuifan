@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/text01"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="今日头条"
+        android:gravity="center"
+        android:background="#CC3131"
+        android:textColor="#fff"
+        />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text01"
+        app:tabTextAppearance="@style/tablayout"
+        />
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/vp"
+        android:layout_below="@id/tab"></android.support.v4.view.ViewPager>
+
+</RelativeLayout>
