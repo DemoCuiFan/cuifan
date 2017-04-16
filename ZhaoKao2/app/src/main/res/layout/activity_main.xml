@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/lightgreen"
+>
+    <RelativeLayout
+        android:id="@+id/main_re"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#363C3F"
+        >
+
+        <TextView
+            android:id="@+id/main_texts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="123"
+            android:textColor="#fff"
+            android:layout_centerHorizontal="true"/>
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:id="@+id/main_click"
+            android:src="@mipmap/btn_category_normal_night"/>
+    </RelativeLayout>
+    <ListView
+        android:layout_below="@id/main_re"
+        android:id="@+id/main_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+</RelativeLayout>
